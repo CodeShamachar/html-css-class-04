@@ -1,0 +1,258 @@
+/* code by Asadujjaman Alif */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --textColor: #3498db;
+  --textColor: #200f1f;
+}
+
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+body{
+  background-color: #200f1f;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.btn{
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all .2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1:hover{
+  border: 2px solid #fff;
+}
+
+
+.btn2:hover{
+  border: 2px solid #3498db;
+  color: aqua;
+  box-shadow: 0px 0px 30px #3498db;
+}
+
+
+.btn3:hover{
+  border: 2px solid #3498db;
+  box-shadow: 2px 2px 5px #3498db;
+  transform: scale(1.1);
+  transform: rotate(180deg);
+  color: #3498db;
+  background-color: #280e3f;
+  transition: .5s;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
+
+.btn4::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #3498db;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn4::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn4:hover::before{
+  height: 180%;
+} 
+
+
+
+/* ---------------------------------- */
+
+
+.btn5::before{
+  content: "";
+  position: absolute;
+  background: #3498db;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn5:hover::before{
+  width:120%;
+} 
+
+
+
+.btn4:hover,.btn5:hover{
+  color: #fff;
+} 
+
+
+
+/* --////////////////////////////////////-------- */
+/* --////////////////////////////////////-------- */
+/* --////////////////////////////////////-------- */
+
+
+.btn6::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: #329ef0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: all .8s ease;
+  z-index: -1;
+}
+
+.btn6:hover::before{
+  transform: translate(0);
+}
+.btn6:hover{
+  color: #F6F0F0;
+}
+.b7::before{
+  transform: translateX(100%);
+}
+
+.b8::before{
+  transform: translateY(100%);
+}
+.b9::before{
+  transform: translateY(-100%);
+}
+
+
+/* --------------------------------- */
+.btn10{
+  color: #fff;
+}
+.btn10::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #329ef0;
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform .5s ease;
+  z-index: -1;
+  
+}
+
+.btn10:hover::before{
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.btn10:hover{
+  color: #000000;
+}
+
+
+
+/* ------------ */
+.btn11::before{
+  transform-origin: right;
+  transform: scaleX(1);
+}
+.btn11:hover::before{
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+
+.btn12::before{
+  transform-origin: top;
+  transform: scaleY(1);
+}
+.btn12:hover::before{
+  transform-origin: bottom;
+  transform: scaleY(0);
+}
+
+
+
+.btn13::before{
+  transform-origin: bottom;
+  transform: scaleY(1);
+}
+.btn13:hover::before{
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+
+
+.btn14::before{
+  content: '';
+  position: absolute;
+  background-color: #329ef0;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  transition: all .5s ease;
+  z-index: -1;
+}
+
+.btn14:hover::before{
+  width: 100%;
+}
+.btn14:hover{
+  color: #F6F0F0;
+}
+
+
+
+.btn15::before{
+  height: 0;
+  width: 100%;
+}
+
+.btn15:hover::before{
+  height: 100%;
+}
+.btn16::before{
+  width: 100%;
+  height: 0;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.btn16:hover::before{
+  height: 300%;
+}
